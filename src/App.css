@@ -1,0 +1,36 @@
+/* Layout wrapper for sidebar + content */
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Sortable TH fix for table cells */
+th.sortable-th {
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  display: table-cell !important;
+  vertical-align: middle;
+}
+
+th.sortable-th svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* Global select styling  */
+select option {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* Responsive utility */
+@media (max-width: 768px) {
+  .content-wrapper {
+    width: 100%;
+  }
+}
